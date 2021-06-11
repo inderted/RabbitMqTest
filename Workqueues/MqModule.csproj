@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MqConnection\MqConnection.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="PublishSubscribe\" />
+    <Folder Include="Routing\" />
+    <Folder Include="Topics\" />
+  </ItemGroup>
+
+</Project>
