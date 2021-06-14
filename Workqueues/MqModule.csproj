@@ -8,10 +8,4 @@
     <ProjectReference Include="..\MqConnection\MqConnection.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="PublishSubscribe\" />
-    <Folder Include="Routing\" />
-    <Folder Include="Topics\" />
-  </ItemGroup>
-
 </Project>

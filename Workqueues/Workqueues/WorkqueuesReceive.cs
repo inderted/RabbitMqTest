@@ -41,6 +41,8 @@ namespace MqModule.Workqueues
                     Console.WriteLine(" [x] Done");
 
                     //忘记使用BasicAck是一个常见的错误。虽然是个简单的错误，但是后果严重。消息会在客户端退出后重新投送（就像是随机进行的重新投送），但是由于RabbitMQ无法释放任何未经确认的消息，内存占用会越来越严重。
+                    
+                    //手动确认消息完成
                     channel.BasicAck(deliveryTag: ea.DeliveryTag, multiple: false);
                 };
 
